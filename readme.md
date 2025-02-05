@@ -18,7 +18,7 @@ This bot automates the process of creating accounts and using referral codes for
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/ahlulmukh/kaleido-autoref.git
+   git clone https://github.com/SKaaalper/kaleido-autoref.git
    cd kaleido-autoref
    ```
 

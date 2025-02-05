@@ -4,6 +4,7 @@ const { getProxyAgent } = require("./proxy");
 const Web3 = require("web3");
 const UserAgent = require("user-agents");
 const { generateEmail, generatorUsername } = require("../utils/generator");
+const https = require("https");
 
 class kaleidoReferral {
   constructor(refCode, proxy = null, currentNum, total) {
@@ -12,6 +13,11 @@ class kaleidoReferral {
     this.axiosConfig = {
       ...(this.proxy && { httpsAgent: getProxyAgent(this.proxy) }),
       timeout: 120000,
+      httpsAgent: new https.Agent({
+        keepAlive: true,
+        minVersion: "TLSv1.2",
+        maxVersion: "TLSv1.3",
+      }),
     };
     this.currentNum = currentNum;
     this.total = total;

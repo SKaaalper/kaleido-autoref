@@ -19,7 +19,7 @@ This bot automates the process of creating accounts and using referral codes for
 
    ```sh
    git clone https://github.com/ahlulmukh/kaleido-autoref.git
-   cd kaleido-autoreff
+   cd kaleido-autoref
    ```
 
 2. Install the dependencies:
